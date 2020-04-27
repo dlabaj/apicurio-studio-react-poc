@@ -1,11 +1,14 @@
 import React from 'react';
 import {Api, ApiDesignChange} from "@apicurio/models";
 
+export interface ToolbarState {
+    isChecked
+}
 export interface GlobalState {
     apis: Api[],
     recentActivity: ApiDesignChange[],
     dashboardView: DashboardViews,
-    notificationDrawerExpanded: boolean
+    notificationDrawerExpanded: boolean,
 }
 
 /**
